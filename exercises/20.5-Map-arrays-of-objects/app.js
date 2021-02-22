@@ -7,7 +7,8 @@ let people = [
 ];
 
 let simplifier = function(person){
-	return person.name;
+    today = new Date();
+	return "Hello my name is " +person.name+" I am "+(today.getFullYear()-person.birthDate.getFullYear())+" years old";
 };
 
 console.log(people.map(simplifier));

@@ -10,3 +10,9 @@ let tasks = [
 ];
 
 //your code here
+let obj= tasks.filter(function(key){
+if(key.done==true){
+    return key;
+}
+});
+console.log(obj);
